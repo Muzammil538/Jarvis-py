@@ -63,7 +63,7 @@ if __name__ == "__main__" :
     #if pass_input == passwrd:
     if 1:
             query = takeCommand().lower()
-
+            #it searches on wikipiedia
             if 'wikipedia' in query:
                 speak('Searching Wikipedia')
                 query = query.replace("Wikipedia","")
@@ -71,51 +71,51 @@ if __name__ == "__main__" :
                 speak("According to Wikipedia")
                 print(results)
                 speak(results)
-                
+            #it opens youtube.com
             elif 'open youtube' in query:
                 wb.open("https://www.youtube.com/")
-
+            #it opens google.com
             elif 'open google' in query:
                 wb.open("https://www.google.com/")
-
+            #it opens facebook.com
             elif 'open facebook' in query:
                 wb.open("https://www.facebook.com/")
-
+            #it opens stackoverflow
             elif 'open stack overflow' in query:
                 wb.open("https://www.stackoverflow.com")
-
+            #it says the time
             elif 'the time' in query:
                 strTime = dt.datetime.now().strftime("%H:%M:%S")
                 print(strTime)
                 speak(f"Sir , The time is {strTime}")
-            
+            #it opens Visual Studio Code
             elif 'open code' in query:
                 codePath = "C:\\Users\\cc\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
                 os.startfile(codePath)
 
-            elif 'email to root' in query:
-                try:
-                    speak("What should i say?")
-                    content = takeCommand()
-                    #to = #whom you want to send Email 
-                    sendEmail(to,content)
-                    speak("Email has been sent!")
+            # elif 'email to root' in query:
+            #     try:
+            #         speak("What should i say?")
+            #         content = takeCommand()
+            #         #to = #whom you want to send Email 
+            #         sendEmail(to,content)
+            #         speak("Email has been sent!")
 
-                except Exception as e:
-                    print(e)
-                    speak("Soory the Email was not sent")
+            #     except Exception as e:
+            #         print(e)
+            #         speak("Soory the Email was not sent")
 
-            elif 'email to jack' in query:
-                try:
-                    speak("What should i say?")
-                    content = takeCommand()
-                    #to = #whom you want to send Email 
-                    sendEmail(to,content)
-                    speak("Email has been sent!")
+            # elif 'email to jack' in query:
+            #     try:
+            #         speak("What should i say?")
+            #         content = takeCommand()
+            #         #to = #whom you want to send Email 
+            #         sendEmail(to,content)
+            #         speak("Email has been sent!")
 
-                except Exception as e:
-                    print(e)
-                    speak("Soory the Email was not sent")
+            #     except Exception as e:
+            #         print(e)
+            #         speak("Soory the Email was not sent")
 
             
                 
