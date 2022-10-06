@@ -1,3 +1,8 @@
 {
-    "python.pythonPath": "C:\\Users\\cc\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe"
+    "python.pythonPath": "C:\\Users\\cc\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }

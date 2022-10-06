@@ -1,6 +1,6 @@
 import pyttsx3
 from pyttsx3 import engine
-import speechRecognition as sr
+import speech_recognition as sr
 import datetime as dt
 import wikipedia as wp
 import webbrowser as wb
